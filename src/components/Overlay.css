@@ -1,0 +1,31 @@
+#menu_list{
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: none; */
+}
+.nav_logo_close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo img, .close{
+    width: clamp(16px, 20%, 32px);
+
+}
+.nav_logo .nav_logo_overlay{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+#menu_list .container .menu_item{
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
