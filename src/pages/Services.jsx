@@ -5,12 +5,12 @@ import './Services.css'
 const Services = () => {
   return (
     <>
-      <section class="services">
+      <section className="services">
         <h1>Our Services</h1>
         <p>We help businesses grow with innovative, secure, and scalable technology solutions.</p>
       </section>
       {serviceItems.map((serviceItem, id)=>
-        <ServiceCard heading={serviceItem.heading} src={serviceItem.src} reasons={serviceItem.reasons}/>
+        <ServiceCard key={id} heading={serviceItem.heading} src={serviceItem.src} reasons={serviceItem.reasons}/>
       )}
     </>
   )

@@ -9,9 +9,10 @@ const Footer = () => {
                 <div className="pages">
                     <h3>Pages</h3>
                     <div><Link to="/" className='a_link'>Home </Link></div>
-                    <div><Link to="/career.html" className='a_link'>Career </Link></div>
-                    <div><Link to="/about_us.html" className='a_link'>About Us </Link></div>
-                    <div><Link to="/contact.html" className='a_link'>Contact Us </Link></div>
+                    <div><Link to="/services" className='a_link'>Services </Link></div>
+                    <div><Link to="/career" className='a_link'>Career </Link></div>
+                    <div><Link to="/about_us" className='a_link'>About Us </Link></div>
+                    <div><Link to="/contact" className='a_link'>Contact Us </Link></div>
                 </div>
                 
                 <div className="heading_subscription">
