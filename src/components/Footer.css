@@ -1,0 +1,75 @@
+/* footer*/
+
+.footer_background {
+    margin-top: 16px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 16px 16px;
+}
+
+
+.pages_subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+@media (max-width:768px){
+    .pages_subscription {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+}
+
+.pages_subscription .pages {
+    margin-bottom: 16px;
+}
+.pages_subscription .pages div{
+    margin-left: 8px;
+    margin-top: 8px;
+
+}
+.pages_subscription .pages div a{
+    color: white;
+    font-size: medium;
+}
+.pages_subscription .pages div a:hover{
+    color: teal;
+}
+.pages_subscription .pages div a.active::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+}
+.pages_subscription .subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white ;
+    border-radius: 5px;
+}
+.pages_subscription .subscription input, .pages_subscription .subscription button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.pages_subscription .subscription input{
+    flex-basis: 70%;
+}
+.pages_subscription .subscription button {
+    background-color: teal;
+    color: white;
+    flex-basis: 30%;
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+    /* margin-right: 8px; */
+}
+/* footer */

@@ -1,17 +1,26 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import Overlay from './components/Overlay'
+import { Route, Router, Routes } from 'react-router-dom'
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import Contact_us from './pages/Contact_us'
+import Career from './pages/Career'
+import About_us from './pages/About_us'
+import Services from './pages/Services'
+import Error from './pages/Error'
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <>
-      <div className='header_overlay_list'>
-        <Header setIsOpen={setIsOpen} isOpen={isOpen} />
-        <Overlay isOpen={isOpen} setIsOpen={setIsOpen} />
-      </div>
-    </>
+      <Routes>
+        <Route path='/' element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path='contact_us' element={<Contact_us />} />
+          <Route path='career' element={<Career />} />
+          <Route path='about_us' element={<About_us />} />
+          <Route path='services' element={<Services />} />
+          <Route path='*' element={<Error />} />
+        </Route>
+      </Routes>
   )
 }
 
