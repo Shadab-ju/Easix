@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Home = () => {
                 <h1>Want To Start or Scale</h1>  <h1>Your Business</h1>
                 <h3>Launch Your digital business with ease,<br/>scale efficiently and make lucrative business</h3>
                 <div className="button">
-                    <a href="/contact.html">Contact us</a>
+                    <Link to="/contact_us">Contact us</Link>
                 </div>
             </div>
             

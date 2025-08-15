@@ -27,7 +27,7 @@ const Contact_us = () => {
                         <textarea name="test" placeholder="Summary" row="6"></textarea>
                     </div>
                     <div>
-                        <button>Send</button>
+                        <button onClick={e=>{e.preventDefault()}}>Send</button>
                     </div>
                 </form>
             </div>
