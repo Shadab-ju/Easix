@@ -117,7 +117,10 @@
 /* reason end*/
 
 /* services start */
-
+.services_block {
+    width: 100%;
+    padding: 0px 8px;
+}
 .services_block h1{
     text-align: center;
 }

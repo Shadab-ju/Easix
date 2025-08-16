@@ -112,4 +112,36 @@ const serviceItems  = [
         ]
     },
 ]
-export {menuItems, serviceItems}
+const homeServiceItems=[
+    {
+        src: "/images/assets/mobile development.svg",
+        heading: "Mobile App Development",
+        description: "From iOS to Android, we build native and cross-platform mobile applications that deliver seamless user experiences"
+    },
+    {
+        src: "/images/assets/web_development.svg",
+        heading: "Web Development",
+        description: "We create responsive, fast, and secure websites and web apps using modern frameworks and best practices"
+    },
+    {
+        src: "/images/assets/cybersecurity.svg",
+        heading: "Cyber Security",
+        description: "Comprehensive security assessments, threat mitigation, and compliance strategies to protect your digital assets"
+    },
+    {
+        src: "/images/assets/cloud_architect.jpg",
+        heading: "Cloud Solutions",
+        description: "Cloud architecture design, migration, and management on AWS, Azure, and Google Cloud for scalable and secure infrastructure"
+    },
+    {
+        src: "/images/assets/data_science.svg",
+        heading: "Data Science",
+        description: "Turn raw data into actionable insights with machine learning, data visualization, and predictive analytics solutions"
+    },
+    {
+        src: "/images/assets/devops.jpg",
+        heading: "Devops and CI/CD",
+        description: "We automate and optimize development pipelines, ensuring faster deployments, better testing, and improved scalability"
+    },
+]
+export {menuItems, serviceItems, homeServiceItems}
